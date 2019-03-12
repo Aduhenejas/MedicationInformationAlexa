@@ -1,0 +1,44 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.0747a9fd-1f5b-4915-b5a3-94b653db4ebc",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-MedicationInformation-default"
+              }
+            }
+          }
+        }
+      },
+      "in_skill_products": [],
+      "resources": {
+        "manifest": {
+          "eTag": "0206f11f9e747c7653fa54b6e7a72bd6"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "b0db7b0bfd321ed0c690405770e19fa9"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:432481344532:function:ask-custom-MedicationInformation-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-MedicationInformation-default",
+            "handler": "index.handler",
+            "revisionId": "c032ba33-590e-4381-b712-3d55741c5b2e",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
+    }
+  }
+}

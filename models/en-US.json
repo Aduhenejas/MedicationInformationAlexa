@@ -1,0 +1,127 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my medication",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddMedicationIntent",
+                    "slots": [
+                        {
+                            "name": "MedicationName",
+                            "type": "AMAZON.GB_FIRST_NAME",
+                            "samples": [
+                                "{MedicationName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "add {MedicationName}",
+                        "add"
+                    ]
+                },
+                {
+                    "name": "GetMedicationIntent",
+                    "slots": [],
+                    "samples": [
+                        "what are my medications",
+                        "List my medication",
+                        "what are patients medication"
+                    ]
+                },
+                {
+                    "name": "GetMedicationAmountIntent",
+                    "slots": [],
+                    "samples": [
+                        "How many times a day does patient have to take their medication",
+                        "How many times a day do I have to take my medication"
+                    ]
+                },
+                {
+                    "name": "RemoveMedicationIntent",
+                    "slots": [
+                        {
+                            "name": "MedicationName",
+                            "type": "AMAZON.GB_FIRST_NAME",
+                            "samples": [
+                                "{MedicationName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "remove {MedicationName}",
+                        "remove"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AddMedicationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "MedicationName",
+                            "type": "AMAZON.GB_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.932310416052.1004645578092"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RemoveMedicationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "MedicationName",
+                            "type": "AMAZON.GB_FIRST_NAME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1034415917954.788060345760"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.932310416052.1004645578092",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which medication would you like to add "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1034415917954.788060345760",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which medication would you like to remove "
+                    }
+                ]
+            }
+        ]
+    }
+}
