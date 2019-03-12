@@ -73,7 +73,7 @@ const GetMedicationIntentHandler = {
     const userID = handlerInput.requestEnvelope.context.System.user.userId; 
     return dbHelper.getMedication(userID)
       .then((data) => {
-        var speechText = "Your medication are "
+        var speechText = "Your current medication consists of  "
         if (data.length == 0) {
           speechText = "You do not have any medication yet, add your medication by saying add medicationName "
         } else {
@@ -103,11 +103,11 @@ const GetMedicationAmountIntentHandler = {
     const userID = handlerInput.requestEnvelope.context.System.user.userId; 
     return dbHelper.getMedicationAmount(userID)
       .then((data) => {
-        var speechText = "Your medication must be taken "
+        var speechText = "Your medication must be taken in doses of "
         if (data.length == 0) {
           speechText = "You do not have any medication yet, add your medication by saying add medicationName "
         } else {
-          speechText += data.map(e => e.medicationAmount) + " times a day "
+          speechText += data.map(e => e.medicationAmount + e.medicationName) + " a day "
         }
         return responseBuilder
           .speak(speechText)

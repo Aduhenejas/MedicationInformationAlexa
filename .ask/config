@@ -21,7 +21,7 @@
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "b0db7b0bfd321ed0c690405770e19fa9"
+            "eTag": "d8f8c611c31e4e89329be127c8df85af"
           }
         },
         "lambda": [
@@ -34,7 +34,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-MedicationInformation-default",
             "handler": "index.handler",
-            "revisionId": "c032ba33-590e-4381-b712-3d55741c5b2e",
+            "revisionId": "361b56dc-7ab3-4246-8ffb-1f098abe29dc",
             "runtime": "nodejs8.10"
           }
         ]

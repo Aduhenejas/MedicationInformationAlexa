@@ -37,15 +37,28 @@
                     "samples": [
                         "what are my medications",
                         "List my medication",
-                        "what are patients medication"
+                        "what are patients medication",
+                        "List medication",
+                        "All medication",
+                        "List medicine",
+                        "All medicine"
                     ]
                 },
                 {
                     "name": "GetMedicationAmountIntent",
-                    "slots": [],
+                    "slots": [
+                        {
+                            "name": "MedicationName",
+                            "type": "AMAZON.GB_FIRST_NAME",
+                            "samples": [
+                                "{MedicationName}"
+                            ]
+                        }
+                    ],
                     "samples": [
                         "How many times a day does patient have to take their medication",
-                        "How many times a day do I have to take my medication"
+                        "How many times a day do I have to take my medication",
+                        "How many times a day should {MedicationName} be taken"
                     ]
                 },
                 {
@@ -61,7 +74,10 @@
                     ],
                     "samples": [
                         "remove {MedicationName}",
-                        "remove"
+                        "remove",
+                        "remove my medication please",
+                        "can I remove {MedicationName} please",
+                        "remove {MedicationName} from my medication list"
                     ]
                 }
             ],
