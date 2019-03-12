@@ -1,4 +1,4 @@
-# DynamoDB MedicationIfromation manager for Alexa Development in Final Year Project
+# DynamoDB MedicationInformation manager for Alexa Development in Final Year Project
 - This is a skill that shows use of DynamoDB with Alexa. This skill uses the [Alexa Skills Kit for Node.js]
 
 ## Instructions to execute this template 
