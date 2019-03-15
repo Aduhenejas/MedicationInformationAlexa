@@ -1,5 +1,5 @@
 var AWS = require("aws-sdk");
-AWS.config.update({region: "us-east-1"});
+AWS.config.update({region: "eu-west-2"});
 const tableName = "dynamodb-medication";
 
 var dbHelper = function () { };

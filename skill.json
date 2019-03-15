@@ -2,7 +2,7 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-US": {
+        "en-GB": {
           "summary": "Sample Short Description",
           "examplePhrases": [
             "Alexa open my medication"
@@ -34,7 +34,7 @@
     "privacyAndCompliance": {
       "allowsPurchases": false,
       "locales": {
-        "en-US": {
+        "en-GB": {
           "termsOfUseUrl": "http://dabblelab.com/terms",
           "privacyPolicyUrl": "http://dabblelab.com/privacy"
         }

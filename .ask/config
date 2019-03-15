@@ -17,9 +17,12 @@
       "in_skill_products": [],
       "resources": {
         "manifest": {
-          "eTag": "0206f11f9e747c7653fa54b6e7a72bd6"
+          "eTag": "9e12f573c14235d64c518cce5e9de724"
         },
         "interactionModel": {
+          "en-GB": {
+            "eTag": "d8f8c611c31e4e89329be127c8df85af"
+          },
           "en-US": {
             "eTag": "d8f8c611c31e4e89329be127c8df85af"
           }
@@ -29,12 +32,12 @@
             "alexaUsage": [
               "custom/default"
             ],
-            "arn": "arn:aws:lambda:us-east-1:432481344532:function:ask-custom-MedicationInformation-default",
-            "awsRegion": "us-east-1",
+            "arn": "arn:aws:lambda:eu-west-2:432481344532:function:ask-custom-MedicationInformation-default",
+            "awsRegion": "eu-west-2",
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-MedicationInformation-default",
             "handler": "index.handler",
-            "revisionId": "361b56dc-7ab3-4246-8ffb-1f098abe29dc",
+            "revisionId": "523855a7-3ae3-489f-8ebb-a6ec73733b2a",
             "runtime": "nodejs8.10"
           }
         ]
