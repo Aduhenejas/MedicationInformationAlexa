@@ -1,38 +1,23 @@
-# DynamoDB MedicationInformation manager for Alexa Development in Final Year Project
-- This is a skill that shows use of DynamoDB with Alexa. This skill uses the [Alexa Skills Kit for Node.js]
+# MedicationInformation
 
-## What is included in this Alexa Skill
-- DynamoDB execution permission to the Lambda.
-- Creates a DynamoDB table with name dynamodb-starter and schema, userId as a Partition Key and medicationName as a sort key. 
+- A skill to manage/update patient medication, add, remove, get and request medication information. Utilises DynamoDB table to store data.
 
-## What are the main function for this patient medication information skill
-- Add Medication to database
-- Remove Medication from Database
-- Request all of the medication that patient takes
-- Request how many of each medication the patient should take a day
-- I must: Allow patients to add how many times a day medication should be taken
-- I must: Allow patients to remove or modify how many times a day medication should be taken
-```
-{
-    AttributeDefinitions: [
-        {
-            AttributeName: 'userId',
-            AttributeType: 'S'
-        },
-        {
-            AttributeName: 'medicationName',
-            AttributeType: 'S'
-        }
-    ],
-    KeySchema: [
-        {
-            AttributeName: 'userId',
-            KeyType: 'HASH'
-        },
-        {
-            AttributeName: 'medicationName',
-            KeyType: 'RANGE'
-        }
-    ]
-}
-```
+## What I used to develop this skill
+
+- [Amazon Developer Account](http://developer.amazon.com/alexa)
+-  [Amazon Web Services Account](http://aws.amazon.com/)
+- The boilerplate sample code for Alexa skill provided by Dabblelab for developers to use as a foundation for skill development.[SkillTemplates](https://skilltemplates.com/templates/).
+- The consent recieved and the link to the skill boilerplate is in the Appendix of the project report
+-  An Alexa device (Amazon Echo Dot)
+- ASK CLI and Visual Studio to develop the skill and deploy it, additionally used the developers console to make more changes. 
+- Node.js
+
+
+
+
+
+
+
+
+
+

@@ -3,27 +3,13 @@
     "default": {
       "skill_id": "amzn1.ask.skill.0747a9fd-1f5b-4915-b5a3-94b653db4ebc",
       "was_cloned": false,
-      "merge": {
-        "manifest": {
-          "apis": {
-            "custom": {
-              "endpoint": {
-                "uri": "ask-custom-MedicationInformation-default"
-              }
-            }
-          }
-        }
-      },
-      "in_skill_products": [],
+      "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "9e12f573c14235d64c518cce5e9de724"
+          "eTag": "9bf30e295a5f430cebe869dae714b554"
         },
         "interactionModel": {
           "en-GB": {
-            "eTag": "d8f8c611c31e4e89329be127c8df85af"
-          },
-          "en-US": {
             "eTag": "d8f8c611c31e4e89329be127c8df85af"
           }
         },
@@ -32,12 +18,12 @@
             "alexaUsage": [
               "custom/default"
             ],
-            "arn": "arn:aws:lambda:eu-west-2:432481344532:function:ask-custom-MedicationInformation-default",
-            "awsRegion": "eu-west-2",
-            "codeUri": "lambda/custom",
+            "arn": "arn:aws:lambda:us-east-1:432481344532:function:ask-custom-MedicationInformation-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/us-east-1_ask-custom-MedicationInformation-default",
             "functionName": "ask-custom-MedicationInformation-default",
             "handler": "index.handler",
-            "revisionId": "523855a7-3ae3-489f-8ebb-a6ec73733b2a",
+            "revisionId": "a894856f-7811-4248-94b8-a783c18e38c5",
             "runtime": "nodejs8.10"
           }
         ]
